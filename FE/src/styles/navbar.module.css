@@ -1,0 +1,26 @@
+#navbar {
+  & ul {
+    & li {
+      /* padding: 1rem 0px 1rem 1.5rem; */
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+    &:has(li:hover) li:not(:hover) {
+      opacity: 0.4;
+    }
+  }
+}
+.show {
+  /* display: block; */
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.hide {
+  visibility: hidden;
+  /* display: none; */
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}

@@ -8,39 +8,214 @@ const banner1 = {
         'The Essential Hoodie and Sweatpant are getting a seasonal modification.',
     image: '/images/banners/fallwinterdesktop.jpg',
 };
+
 const data = {
     topic: 'PICK FOR YOU',
     cards: [
         {
-            id: 1,
-            title: 'Slider 1',
-            image: [
-                '/images/products/born-of-purpose-tee-top-717201.webp',
-                '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+            id: '1',
+            title: 'Slider 1 ',
+
+            color: [
+                {
+                    id: '1',
+                    name: 'black',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 0 },
+                        { id: '2', size: 'M', stock: 0 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: '2XL', stock: 10 },
+                        { id: '6', size: '3XL', stock: 10 },
+                        { id: '7', size: '4XL', stock: 10 },
+                        { id: '8', size: '5XL', stock: 10 },
+                        { id: '9', size: '6XL', stock: 10 },
+                    ],
+                },
+                {
+                    id: '2',
+                    name: 'blue',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+                {
+                    id: '3',
+                    name: 'red',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
             ],
-            description: 'Slider 1',
             price: 100,
         },
         {
-            id: 2,
-            title: 'Slider 2',
-            image: '/images/banners/slider2.jpg',
-            description: 'Slider 2',
+            id: '2',
+            title: 'Slider 2 ',
             price: 100,
+            color: [
+                {
+                    id: '1',
+                    name: 'black',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+                {
+                    id: '2',
+                    name: 'blue',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+                {
+                    id: '3',
+                    name: 'red',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+            ],
         },
         {
-            id: 3,
-            title: 'Slider 3',
-            image: '/images/banners/slider3.jpg',
-            description: 'Slider 3',
+            id: '3',
+            title: 'Slider 3 ',
             price: 100,
+            color: [
+                {
+                    id: '1',
+                    name: 'black',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+                {
+                    id: '2',
+                    name: 'blue',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+                {
+                    id: '3',
+                    name: 'red',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+            ],
         },
         {
-            id: 4,
-            title: 'Slider 4',
-            image: '/images/banners/slider4.jpg',
-            description: 'Slider 4',
+            id: '4',
+            title: 'Slider 4 ',
             price: 100,
+            color: [
+                {
+                    id: '1',
+                    name: 'black',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+            ],
+        },
+        {
+            id: '5',
+            title: 'Slider 5 ',
+            price: 100,
+            color: [
+                {
+                    id: '1',
+                    name: 'black',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+            ],
         },
     ],
 };
@@ -49,6 +224,213 @@ const banner2 = {
     description:
         'The Essential Hoodie and Sweatpant are getting a seasonal modification.',
     image: '/images/banners/banner2.jpg',
+};
+
+const data2 = {
+    topic: 'BEST SELLER',
+    cards: [
+        {
+            id: '1',
+            title: 'Slider 1 ',
+
+            color: [
+                {
+                    id: '1',
+                    name: 'black',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+                {
+                    id: '2',
+                    name: 'blue',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+                {
+                    id: '3',
+                    name: 'red',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+            ],
+            price: 100,
+        },
+        {
+            id: '2',
+            title: 'Slider 2 ',
+            price: 100,
+            color: [
+                {
+                    id: '1',
+                    name: 'black',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+                {
+                    id: '2',
+                    name: 'blue',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+                {
+                    id: '3',
+                    name: 'red',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+            ],
+        },
+        {
+            id: '3',
+            title: 'Slider 3 ',
+            price: 100,
+            color: [
+                {
+                    id: '1',
+                    name: 'black',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+                {
+                    id: '2',
+                    name: 'blue',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+                {
+                    id: '3',
+                    name: 'red',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+            ],
+        },
+        {
+            id: '4',
+            title: 'Slider 4 ',
+            price: 100,
+            color: [
+                {
+                    id: '1',
+                    name: 'black',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+            ],
+        },
+        {
+            id: '5',
+            title: 'Slider 5 ',
+            price: 100,
+            color: [
+                {
+                    id: '1',
+                    name: 'black',
+                    image: [
+                        '/images/products/born-of-purpose-tee-top-717201.webp',
+                        '/images/products/born-of-purpose-tee-top-black-2xl-811696.webp',
+                    ],
+                    sizes: [
+                        { id: '1', size: 'S', stock: 10 },
+                        { id: '2', size: 'M', stock: 10 },
+                        { id: '3', size: 'L', stock: 10 },
+                        { id: '4', size: 'XL', stock: 10 },
+                        { id: '5', size: 'XXL', stock: 10 },
+                    ],
+                },
+            ],
+        },
+    ],
 };
 const LayoutHome = () => {
     return (
@@ -61,10 +443,7 @@ const LayoutHome = () => {
 
             <Sliders
                 dataTopic={data?.topic}
-                dataCards={data?.cards.map((card) => ({
-                    ...card,
-                    image: Array.isArray(card.image) ? card.image : [card.image],
-                }))}
+                dataCards={data?.cards}
             />
 
             <Banner
@@ -73,6 +452,10 @@ const LayoutHome = () => {
                 imageProps={banner2?.image}
             />
 
+            <Sliders
+                dataTopic={data2?.topic}
+                dataCards={data2?.cards}
+            />
         </>
     );
 };

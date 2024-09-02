@@ -1,31 +1,57 @@
-import React from 'react'
+'use client';
+import React from 'react';
 import Cards from './cards';
+import useEmblaCarousel from 'embla-carousel-react';
+import styles from '@/styles/slider.module.css';
 interface SlidersProps {
     dataTopic: string;
     dataCards: {
-        id: number;
+        id: string;
         title: string;
-        image: string[];
-        description: string;
+
+        color: {
+            id: string;
+            name: string;
+            image: string[];
+            sizes: {
+                id: string;
+                size: string;
+                stock: number;
+            }[];
+        }[];
         price: number;
     }[];
 }
 
 const Sliders = ({ dataTopic, dataCards }: SlidersProps) => {
+    const [emblaRef] = useEmblaCarousel({ loop: true, slidesToScroll: 'auto' });
     return (
         <main className='px-[3.8rem] py-[2rem]'>
             <h1 className='text-4xl mb-10 '>{dataTopic}</h1>
-            <div className="grid grid-cols-4 place-items-center ">
-
+            {/* <div className='grid grid-cols-4 place-items-center '>
                 {dataCards.map((card) => (
-                    <>
-                        <Cards dataCards={card} />
-                    </>
-
+                    <Cards
+                        key={card.id}
+                        dataCards={card}
+                    />
                 ))}
+            </div> */}
+
+            <div
+                className={styles.embla}
+                ref={emblaRef}>
+                <div className={styles.embla__container}>
+                    {dataCards.map((card) => (
+                        <div
+                            key={card.id}
+                            className={`${styles.embla__slide} lg:max-w-[25%] md:max-w-[33%] sm:max-w-[50%] `}>
+                            <Cards dataCards={card} />
+                        </div>
+                    ))}
+                </div>
             </div>
         </main>
-    )
-}
+    );
+};
 
-export default Sliders
+export default Sliders;

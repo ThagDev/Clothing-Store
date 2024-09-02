@@ -1,0 +1,8 @@
+.card {
+  & .size {
+    transition: opacity 0.3s ease;
+  }
+  &:has(.size:hover) .size:not(:hover) {
+    opacity: 0.4;
+  }
+}

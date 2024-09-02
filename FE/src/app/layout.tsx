@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono, Fira_Code } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/navbar";
+
+import AssignPathRoles from "@/components/assignPathRoles";
 
 const inter = Fira_Code({ subsets: ["latin"] });
 const roboto_mono = Roboto_Mono({ subsets: ["latin"] });
@@ -19,8 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto_mono.className}>
-        <NavBar />
-        {children}
+        <AssignPathRoles>{children}</AssignPathRoles>
       </body>
     </html>
   );

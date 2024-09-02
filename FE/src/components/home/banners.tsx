@@ -45,9 +45,7 @@ export default function Banner({
                 <div className='absolute left-[50%] translate-x-[-50%] bottom-[10%] grid place-items-center gap-4'>
                     <h2 className='text-white text-xl font-bold text-center'>{title}</h2>
                     <p className=' text-white text-center'>{description}</p>
-                    <button className=' bg-white py-2 px-4 font-bold '>
-                        Shop Now
-                    </button>
+                    <button className=' bg-white py-2 px-4 font-bold '>Shop Now</button>
                 </div>
             </picture>
         </main>

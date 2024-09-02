@@ -65,12 +65,12 @@ const NavBar = () => {
             onMouseLeave={handleMouseLeave}>
             <nav className=''>
                 <ul className='flex w-full justify-evenly items-center py-4 '>
-                    <div className='text-xl font-bold'>ThagStore</div>
-                    {dataCategoryParents.map((item) => (
+                    <div className='text-2xl font-bold'>ThagStore</div>
+                    {dataCategoryParents.map((item: any) => (
                         <li
                             key={item.id}
                             onMouseEnter={handleMouseEnter}
-                            className='text-sm'>
+                            className='text-sm md:text-sm lg:text-xl'>
                             <Link href={'#'}>{item.name}</Link>
                         </li>
                     ))}

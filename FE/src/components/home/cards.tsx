@@ -48,22 +48,24 @@ const Cards = React.memo(({ dataCards }: CardsProps) => {
                 />
 
                 {imageHover !== 0 && (
-                    <div className='absolute bottom-[5%] left-1/2 transform -translate-x-1/2 z-50   w-[90%] bg-[#C5C5C5] opacity-100'>
+                    <div className='absolute bottom-[5%] left-1/2 transform -translate-x-1/2 z-50  w-[90%] bg-[#C5C5C5] opacity-100'>
                         <div className='flex justify-center items-center gap-1'>
                             <IoIosAddCircleOutline />
                             <h3 className='text-sm text-center my-2'>Quick Add</h3>
                         </div>
                         <div className='p-2 flex flex-wrap justify-center items-center gap-2'>
                             {colorChanged?.sizes.map((size) => (
-                                <span
+                                <button
                                     key={size.id}
+                                    disabled={size.stock === 0}
                                     className={`text-sm py-2 px-3 bg-slate-100 cursor-pointer ${styles.size
                                         } ${size.stock === 0
-                                            ? 'opacity-50 cursor-not-allowed text-red-600 line-through'
+                                            ? ' opacity-50 cursor-not-allowed text-red-600 line-through ' +
+                                            styles.noStock
                                             : ''
                                         }`}>
                                     {size.size}
-                                </span>
+                                </button>
                             ))}
                         </div>
                     </div>

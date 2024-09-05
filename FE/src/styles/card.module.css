@@ -2,7 +2,10 @@
   & .size {
     transition: opacity 0.3s ease;
   }
-  &:has(.size:hover) .size:not(:hover) {
+  &:has(.size:hover:not(.no-stock)) .size:not(:hover):not(.no-stock) {
     opacity: 0.4;
+  }
+  & .noStock {
+    cursor: not-allowed !important;
   }
 }

@@ -18,6 +18,10 @@ const config: Config = {
         md: '810px',
         lg: '1440px',
       },
+      container: {
+        center: true,
+        padding: '2rem',
+      },
     },
   },
   plugins: [],

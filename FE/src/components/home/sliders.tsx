@@ -27,16 +27,7 @@ const Sliders = ({ dataTopic, dataCards }: SlidersProps) => {
     const [emblaRef] = useEmblaCarousel({ loop: true, slidesToScroll: 'auto' });
     return (
         <main className='px-[3.8rem] py-[2rem]'>
-            <h1 className='text-4xl mb-10 '>{dataTopic}</h1>
-            {/* <div className='grid grid-cols-4 place-items-center '>
-                {dataCards.map((card) => (
-                    <Cards
-                        key={card.id}
-                        dataCards={card}
-                    />
-                ))}
-            </div> */}
-
+            <h1 className='text-4xl mb-10 '>{dataTopic?.toUpperCase()}</h1>
             <div
                 className={styles.embla}
                 ref={emblaRef}>
@@ -44,7 +35,7 @@ const Sliders = ({ dataTopic, dataCards }: SlidersProps) => {
                     {dataCards.map((card) => (
                         <div
                             key={card.id}
-                            className={`${styles.embla__slide} lg:max-w-[25%] md:max-w-[33%] sm:max-w-[50%] `}>
+                            className={`${styles.embla__slide} lg:max-w-[25%] md:max-w-[25%] sm:max-w-[50%] `}>
                             <Cards dataCards={card} />
                         </div>
                     ))}
